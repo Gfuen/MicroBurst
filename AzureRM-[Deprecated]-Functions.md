@@ -3,8 +3,8 @@ This page will document the functions in MicroBurst that rely on the [AzureRM](h
 This module is no longer supported by Microsoft, and the MicroBurst tool will not be adding functionality to these functions. All functionality in these functions has been ported to the Az module functions. This section will just serve as historical code for anyone stuck on a system that only has the AzureRM module. If you're in that situation... best of luck.
 
 
-### Functions Information
-# Get-AzurePasswords.ps1
+# Functions Information
+## Get-AzurePasswords.ps1
 PS C:\> Get-Help Get-AzurePasswords
 
 NAME: Get-AzurePasswords
@@ -45,7 +45,7 @@ DESCRIPTION:
 RELATED LINKS: https://blog.netspi.com/get-azurepasswords
 
 
-# Invoke-EnumerateAzureBlobs.ps1
+## Invoke-EnumerateAzureBlobs.ps1
 PS C:\> Import-Module .\Invoke-EnumerateAzureBlobs.ps1
 
 PS C:\> Get-Help Invoke-EnumerateAzureBlobs
@@ -86,7 +86,7 @@ DESCRIPTION:
 RELATED LINKS: https://blog.netspi.com/anonymously-enumerating-azure-file-resources/
 
 
-# Invoke-EnumerateAzureSubDomains.ps1
+## Invoke-EnumerateAzureSubDomains.ps1
 PS C:\> Import-Module .\Invoke-EnumerateAzureSubDomains.ps1
 
 PS C:\> Get-Help Invoke-EnumerateAzureSubDomains
@@ -138,7 +138,7 @@ DESCRIPTION: The function will check for valid Azure subdomains, based off of a 
 
 RELATED LINKS: https://blog.netspi.com/enumerating-azure-services/
 
-# Get-AzureDomainInfo.ps1
+## Get-AzureDomainInfo.ps1
 PS C:\> Import-Module .\Get-AzureDomainInfo.ps1
 
 PS C:\> Get-Help Get-AzureDomainInfo
@@ -200,7 +200,7 @@ DESCRIPTION: The function will dump available information for an Azure domain ou
     VERBOSE: Done with all tasks for the 'MicroBurst Demo' Subscription.
 
 	
-# Invoke-AzureRmVMBulkCMD.ps1
+## Invoke-AzureRmVMBulkCMD.ps1
 PS C:\> Import-Module .\Get-MSOLDomainInfo.ps1
 
 PS C:\> Get-Help Invoke-AzureRmVMBulkCMD
@@ -240,7 +240,7 @@ DESCRIPTION: This function will run a PowerShell script on all (or a list of) VM
 
 RELATED LINKS: https://blog.netspi.com/running-powershell-scripts-on-azure-vms
 
-# Get-AzureKeyVaults-Automation.ps1
+## Get-AzureKeyVaults-Automation.ps1
 PS C:\> Import-Module .\Get-AzureKeyVaults-Automation.ps1
 
 PS C:\> Get-Help Get-AzureKeyVaults-Automation
@@ -273,7 +273,7 @@ DESCRIPTION: This function will look for any Key Vault Keys/Secrets that are ava
 
 RELATED LINKS: https://blog.netspi.com/azure-automation-accounts-key-stores
 
-# Get-AzureVMExtensionSettings.ps1
+## Get-AzureVMExtensionSettings.ps1
 PS C:\> Import-Module .\Get-AzureVMExtensionSettings.ps1
 
 PS C:\> Get-Help Get-AzureVMExtensionSettings -full
