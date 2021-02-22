@@ -1,0 +1,1 @@
+This page will document the functions in MicroBurst that rely on the [Azure REST](https://docs.microsoft.com/en-us/rest/api/azure/) APIs.
