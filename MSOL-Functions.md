@@ -1,7 +1,7 @@
 This page will document the functions in MicroBurst that rely on the [MSOnline](https://docs.microsoft.com/en-us/powershell/module/msonline) PowerShell module.
 
-### Functions Information
-# Get-MSOLDomainInfo.ps1
+# Functions Information
+## Get-MSOLDomainInfo.ps1
 PS C:\> Import-Module .\Get-MSOLDomainInfo.ps1
 
 PS C:\> Get-Help Get-MSOLDomainInfo
