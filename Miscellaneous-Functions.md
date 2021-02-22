@@ -7,9 +7,9 @@ This page will document the functions in MicroBurst that don't really rely on a 
 
 # Invoke-EnumerateAzureSubDomains.ps1
 
-# AutomationRunbook-OwnerPersist.ps1
-
 # Get-AzACR.ps1
+
+# AutomationRunbook-OwnerPersist.ps1
 
 # OwnerPersist-POST.ps1
 
