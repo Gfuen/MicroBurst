@@ -1,1 +1,4 @@
 This page will document the functions in MicroBurst that rely on the [AzureAD](https://docs.microsoft.com/en-us/powershell/module/azuread) PowerShell module.
+
+# Functions Information
+## Get-AzureADDomainInfo
