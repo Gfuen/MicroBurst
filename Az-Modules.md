@@ -1,1 +1,0 @@
-These modules are based off of the [Az PowerShell module](https://docs.microsoft.com/en-us/powershell/azure/new-azureps-module-az?view=azps-4.3.0) cmdlets.
