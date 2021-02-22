@@ -1,3 +1,0 @@
-This page will document the functions in MicroBurst that rely on the [AzureRM](https://docs.microsoft.com/en-us/powershell/azure/azurerm/install-azurerm-ps) PowerShell module.
-
-This module is no longer supported by Microsoft, and the MicroBurst tool will not be adding functionality to these functions. All functionality in these functions has been ported to the Az module functions. This section will just serve as historical code for anyone stuck on a system that only has the AzureRM module. If you're in that situation... best of luck.
