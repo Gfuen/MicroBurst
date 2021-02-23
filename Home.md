@@ -10,7 +10,9 @@ There are several items on the MicroBurst "To Do" list that we could use some he
 * Converting all of the functionality in Get-AzPasswords over to the REST APIs
 
 # Pull Request Process
-For any new functionality, or updates to existing code, please try to generally keep with the coding practices (comments, indents, parameter names) of the existing code. When adding new functions, follow the naming convention used by existing functions in the same family of functions (Get-AzPasswords). Finally, please follow the Microsoft conventions for [approved PowerShell verbs](https://docs.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands).
+For any new functionality, or updates to existing code, please try to generally keep with the coding practices (comments, indents, parameter names) of the existing code. When adding new functions, follow the naming convention used by existing functions in the same family of functions (Get-AzPasswords). 
+
+Finally, please follow the Microsoft conventions for [approved PowerShell verbs](https://docs.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands).
 If you have any questions/ideas/comments, feel free to raise an [Issue](https://github.com/NetSPI/MicroBurst/issues) or ping [Karl on Twitter](https://twitter.com/kfosaaen).
 
 For those looking for the original function descriptions, check out the now deprecated [AzureRM section](https://github.com/NetSPI/MicroBurst/wiki/AzureRM-%5BDeprecated%5D-Functions).
