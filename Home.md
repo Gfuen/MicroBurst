@@ -9,7 +9,7 @@ This will import all applicable functions based off of the currently installed m
 There are several items on the MicroBurst "To Do" list that we could use some help on. Pull requests are always welcome (See below), so feel free to take a crack at one of these items:
 * Converting all of the functionality in Get-AzPasswords over to the REST APIs
 
-# Pull Request Process
+# Contributing
 For any new functionality, or updates to existing code, please try to generally keep with the coding practices (comments, indents, parameter names) of the existing code. When adding new functions, follow the naming convention used by existing functions in the same family of functions (Get-AzPasswords). 
 
 Finally, please follow the Microsoft conventions for [approved PowerShell verbs](https://docs.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands).
