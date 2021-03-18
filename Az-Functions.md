@@ -44,9 +44,21 @@ If you have contributor rights, modifying the key vault access policies (not ver
 
 ***
 ## Get-AzDomainInfo
+### Description:
+### Usage:
+### Parameters:
+### Considerations:
 
 ***
 ## Get-AzKeyVaultsAutomation
+### Description:
+### Usage:
+### Parameters:
+### Considerations:
 
 ***
 ## Invoke-AzVMBulkCMD 
+### Description:
+### Usage:
+### Parameters:
+### Considerations:
