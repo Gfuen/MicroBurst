@@ -2,3 +2,7 @@ This page will document the functions in MicroBurst that rely on the [AzureAD](h
 
 # Functions Information
 ## Get-AzureADDomainInfo
+### Description:
+### Usage:
+### Parameters:
+### Considerations:
