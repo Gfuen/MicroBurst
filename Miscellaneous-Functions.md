@@ -2,14 +2,43 @@ This page will document the functions in MicroBurst that don't really rely on a 
 
 # Functions Information
 ## Get-AzureVMExtensionSettings.ps1
+### Description:
+### Usage:
+### Parameters:
+### Considerations:
 
+***
 ## Invoke-EnumerateAzureBlobs.ps1
+### Description:
+### Usage:
+### Parameters:
+### Considerations:
 
+***
 ## Invoke-EnumerateAzureSubDomains.ps1
+### Description:
+### Usage:
+### Parameters:
+### Considerations:
 
+***
 ## Get-AzACR.ps1
+### Description:
+### Usage:
+### Parameters:
+### Considerations:
 
+***
 ## AutomationRunbook-OwnerPersist.ps1
+### Description:
+### Usage:
+### Parameters:
+### Considerations:
 
+***
 ## OwnerPersist-POST.ps1
+### Description:
+### Usage:
+### Parameters:
+### Considerations:
 
