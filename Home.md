@@ -1,7 +1,27 @@
-Welcome to the MicroBurst wiki! This wiki is broken out into the individual module types ([Az](https://github.com/NetSPI/MicroBurst/wiki/Az-Functions), [AzureAD](https://github.com/NetSPI/MicroBurst/wiki/AzureAD-Functions), etc.) which can be found in the sidebar to the right. Most of the core functions will be in the [Az](https://github.com/NetSPI/MicroBurst/wiki/Az-Functions) section, as that's where most of the Azure functionality is in the PowerShell modules.
+Welcome to the MicroBurst wiki! The wiki content is broken out into the individual module types ([Az](https://github.com/NetSPI/MicroBurst/wiki/Az-Functions), [AzureAD](https://github.com/NetSPI/MicroBurst/wiki/AzureAD-Functions), etc.) which can be found in the sidebar to the right. Most of the core functions will be in the [Az](https://github.com/NetSPI/MicroBurst/wiki/Az-Functions) section, as that's where most of the Azure functionality is in the PowerShell modules.
 
 # General Usage
-### Importing the Module
+### Installing the Supporting Modules
+In a local administrator privileged PowerShell session:
+
+	Install-Module Az
+
+	Install-Module AzureAd
+
+	Install-Module MSOL
+
+### Authenticating to the Supporting Modules
+In a PowerShell session:
+
+	Connect-AzAccount
+
+	Connect-AzureAD
+
+	Connect-MsolService
+
+### Importing the MicroBurst Module
+In a PowerShell session:
+
 	Import-Module .\MicroBurst.psm1
 This will import all applicable functions based off of the currently installed modules in your environment.
 
