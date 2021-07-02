@@ -20,11 +20,13 @@ This function will collect available credentials from the following services in 
 * Automation Accounts
     * Run as Service Principal Account certificates
     * Stored Credentials
+* Azure Kubernetes Services
+    * Kubeconfig files for clusterUser and clusterAdmin users
 
 ### Usage:
 Run with all services and all options:
 
-`PS C:\> Get-AzPasswords -ExportCerts Y -ModifyPolicies Y -Verbose`
+`PS C:\> Get-AzPasswords -ExportCerts Y -ExportKube Y -ModifyPolicies Y -Verbose`
 
 Run with all services:
 
@@ -45,6 +47,8 @@ If you have contributor rights, modifying the key vault access policies (not ver
 ***
 ## Get-AzDomainInfo
 ### Description:
+This function will collect configurations and general information for services in Azure.
+
 ### Usage:
 ### Parameters:
 ### Considerations:
@@ -52,6 +56,8 @@ If you have contributor rights, modifying the key vault access policies (not ver
 ***
 ## Get-AzKeyVaultsAutomation
 ### Description:
+This function creates an Automation Account Runbook that exports all available Key Vault keys, secrets, and certificates. The Runbook utilizes any available "Run as" accounts in the automation account to access the vaults.
+
 ### Usage:
 ### Parameters:
 ### Considerations:
@@ -59,6 +65,8 @@ If you have contributor rights, modifying the key vault access policies (not ver
 ***
 ## Invoke-AzVMBulkCMD 
 ### Description:
+This function executes commands on one or more Azure Virtual Machines in a subscription.
+
 ### Usage:
 ### Parameters:
 ### Considerations:
