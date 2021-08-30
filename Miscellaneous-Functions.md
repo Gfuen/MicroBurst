@@ -44,11 +44,14 @@ This page will document the functions in MicroBurst that don't really rely on a 
 
 ***
 ## Invoke-APIConnectionHijack.ps1
-### Description: This script is a generic wrapper that will create a new Logic App with a provided definition. It will fill in several placeholder variables with the target connection details and also grabs any output/errors from the Logic App run. An example Logic App definition for dumping out a Key Vault is included.
-### Usage: Invoke-APIConnectionHijack -logicAppRG "my-resource-group" -connectionName "keyvault" -definitionPath ".\payload.json"
+### Description: 
+This script is a generic wrapper that will create a new Logic App with a provided definition. It will fill in several placeholder variables with the target connection details and also grabs any output/errors from the Logic App run. An example Logic App definition for dumping out a Key Vault is included.
+### Usage: 
+Invoke-APIConnectionHijack -logicAppRG "my-resource-group" -connectionName "keyvault" -definitionPath ".\payload.json"
 ### Parameters: 
 * logicAppName - The name of the Logic App to be created. Default: Random
 * logicAppRG - The resource group to create the Logic App in. This can be any RG that you have the Microsoft.Logic/* permission in.
 * connectionName - The name of the API Connection to hijack
 * definitionPath - The file containing your JSON Logic App definition
-### Considerations: You should replace the name of any connections in your definition with "CONNECTOR_PLACEHOLDER". Additionally, the "connections" key in the "parameters" object should be empty, as it will be replaced by the script. This ensures everything is as generic as possible.
+### Considerations: 
+You should replace the name of any connections in your definition with "CONNECTOR_PLACEHOLDER". Additionally, the "connections" key in the "parameters" object should be empty, as it will be replaced by the script. This ensures everything is as generic as possible.
