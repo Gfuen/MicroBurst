@@ -8,7 +8,7 @@ In a local administrator privileged PowerShell session:
 
 	Install-Module AzureAd
 
-	Install-Module MSOL
+	Install-Module MSOnline
 
 ### Authenticating to the Supporting Modules
 In a PowerShell session:
