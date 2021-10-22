@@ -16,7 +16,7 @@ DESCRIPTION: The function will dump available information for an Office365 domai
     
     -------------------------- EXAMPLE 1 --------------------------
     
-    PS C:\>Get-AzureDomainInfo -folder Test -Verbose
+    PS C:\>Get-MSOLDomainInfo-folder Test -Verbose
     
     VERBOSE: Getting Domain Contact Info...
     VERBOSE: Getting Domains...
