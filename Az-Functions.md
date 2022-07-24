@@ -59,7 +59,7 @@ Run with the folder parameter to dump files inside the mentioned folder with ver
 * `-folder` - Folder to output to
 * `-Subscription` - If not specified, the function will prompt you for a subscription to use
 * `-ResourceGroup` - ResourceGroup to use for the gathering of Azure service information
-* `-Users` - These are specific parameters to limit the output. You may not care about exporting the users and groups. Use -Users N and -Groups N to disable.
+* `-Users` - These are specific parameters to limit the output. You may not care about exporting the users and groups. Use -Users N and -Groups N to disable
 * `-Groups` - Specify which Az Domain groups to dump information on, default is yes
 * `-StorageAccounts` - Specify which Storage accounts to dump information on, default is yes
 * `-Resources` - Specify which Azure resources to dump information on, default is yes
@@ -67,24 +67,46 @@ Run with the folder parameter to dump files inside the mentioned folder with ver
 * `-NetworkInfo` - Specify which Azure Network information to dump, default is yes
 * `-RBAC` - Specify which RBAC Users and Roles to dump information on, default is yes
 * `-LoginBypass` - Bypass login process if already authenticated to Az
-* `Additional Common Parameters eg. such as Verbose, Debug, etc ...` - cmdlet supports the common parameters which can be further detailed at (https:/go.microsoft.com/fwlink/?LinkID=113216).
+* `Additional Common Parameters eg. such as -Verbose, -Debug, etc ...` - cmdlet supports the common Module parameters which can be further detailed at [Microsoft Cmdlet Common Parameters](https:/go.microsoft.com/fwlink/?LinkID=113216)
 
 ### Considerations:
-These are specific parameters to limit the output. You may not care about exporting the users and groups. Use -Users N and -Groups N to disable.
+None
 ***
 ## Get-AzKeyVaultsAutomation
 ### Description:
 This function creates an Automation Account Runbook that exports all available Key Vault keys, secrets, and certificates. The Runbook utilizes any available "Run as" accounts in the automation account to access the vaults.
 
 ### Usage:
-### Parameters:
-### Considerations:
+Dumps all available Key Vault Keys/Secrets from an Azure subscription via Automation Accounts.
 
+`PS C:\MicroBurst> Get-AzKeyVaults-Automation -Verbose `
+
+### Parameters:
+
+* `-Subscription` -Subscription to use when dumping keys/secrets
+* `-CertificatePassword` -Password to use for the exported PFX files
+* `-ExportCerts` -Flag for saving private certs locally
+* `Additional Common Parameters eg. such as -Verbose, -Debug, etc ...` - cmdlet supports the common Module parameters which can be further detailed at [Microsoft Cmdlet Common Parameters](https:/go.microsoft.com/fwlink/?LinkID=113216)
+### Considerations:
+None
 ***
 ## Invoke-AzVMBulkCMD 
 ### Description:
 This function executes commands on one or more Azure Virtual Machines in a subscription.
 
 ### Usage:
+Run Powershell function against all selected available VMs.
+
+`PS C:\MicroBurst> Invoke-AzVMBulkCMD -Verbose -Script .\test.ps1`
+
 ### Parameters:
+By default the Script parameter is required to use for script execution among selected VMs.
+
+* `-Subscription` -Subscription to use for executing VM commands
+* `-ResourceGroupName` -Resource Group to use for executing VM commands
+* `-Name` -Specific Names to use when selecting VMs
+* `-Script` -Powershell script to run against VMs
+* `-output` -File to use for output
+* `Additional Common Parameters eg. such as -Verbose, -Debug, etc ...` - cmdlet supports the common Module parameters which can be further detailed at [Microsoft Cmdlet Common Parameters](https:/go.microsoft.com/fwlink/?LinkID=113216)
 ### Considerations:
+If no Resource Group or Names are inputted then the Powershell function defaults to selecting all of the VMs in the subscription.
