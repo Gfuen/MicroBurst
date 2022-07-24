@@ -34,10 +34,10 @@ Run with all services:
 
 ### Parameters:
 Each service will have its own parameter (-StorageAccounts Y). By default, all services are set to 'Y', so disable any by setting the parameter to 'N'
-* `-Subscription` - If not specified, the function will prompt you for a subscription to use
-* `-ModifyPolicies` - Temporarily adds list and get rights for your current user in the key vault access policies
-* `-ExportCerts` - Exports the Key Vault certificates to local files
-* `-CertificatePassword` - The password used for exporting the automation account run as certificates
+* `-Subscription` -If not specified, the function will prompt you for a subscription to use
+* `-ModifyPolicies` -Temporarily adds list and get rights for your current user in the key vault access policies
+* `-ExportCerts` -Exports the Key Vault certificates to local files
+* `-CertificatePassword` -The password used for exporting the automation account run as certificates
 
 ### Considerations:
 The automation accounts section will create new runbooks in the automation accounts. These should get deleted by the script, but some times that delete fails. Additionally, the job run records will still show up in job logs, so it is a logged action.
@@ -56,17 +56,17 @@ Run with the folder parameter to dump files inside the mentioned folder with ver
 
 ### Parameters:
 
-* `-folder` - Folder to output to
-* `-Subscription` - If not specified, the function will prompt you for a subscription to use
-* `-ResourceGroup` - ResourceGroup to use for the gathering of Azure service information
-* `-Users` - These are specific parameters to limit the output. You may not care about exporting the users and groups. Use -Users N and -Groups N to disable
-* `-Groups` - Specify which Az Domain groups to dump information on, default is yes
-* `-StorageAccounts` - Specify which Storage accounts to dump information on, default is yes
-* `-Resources` - Specify which Azure resources to dump information on, default is yes
-* `-VMs` - Specify which Azure VMs to dump information on, default is yes
-* `-NetworkInfo` - Specify which Azure Network information to dump, default is yes
-* `-RBAC` - Specify which RBAC Users and Roles to dump information on, default is yes
-* `-LoginBypass` - Bypass login process if already authenticated to Az
+* `-folder` -The folder to output to.
+* `-Subscription` -If not specified, the function will prompt you for a subscription to use
+* `-ResourceGroup` -ResourceGroup to use for the gathering of Azure service information
+* `-Users` -These are specific parameters to limit the output. You may not care about exporting the users and groups. Use -Users N and -Groups N to disable
+* `-Groups` -Flag to specify which Az Domain groups to dump information on, default is yes
+* `-StorageAccounts` -Flag to specify which Storage accounts to dump information on, default is yes
+* `-Resources` -Flag to specify which Azure resources to dump information on, default is yes
+* `-VMs` -Flag to specify which Azure VMs to dump information on, default is yes
+* `-NetworkInfo` -Flag to specify which Azure Network information to dump, default is yes
+* `-RBAC` -Flag to specify which RBAC Users and Roles to dump information on, default is yes
+* `-LoginBypass` -Bypass login process if already authenticated to Az
 * `Additional Common Parameters eg. such as -Verbose, -Debug, etc ...` - cmdlet supports the common Module parameters which can be further detailed at [Microsoft Cmdlet Common Parameters](https:/go.microsoft.com/fwlink/?LinkID=113216)
 
 ### Considerations:
@@ -104,7 +104,7 @@ By default the Script parameter is required to use for script execution among se
 
 * `-Subscription` -Subscription to use for executing VM commands
 * `-ResourceGroupName` -Resource Group to use for executing VM commands
-* `-Name` -Specific Names to use when selecting VMs
+* `-Name` -The flag to specify names to use when selecting VMs
 * `-Script` -Powershell script to run against VMs
 * `-output` -File to use for output
 * `Additional Common Parameters eg. such as -Verbose, -Debug, etc ...` - cmdlet supports the common Module parameters which can be further detailed at [Microsoft Cmdlet Common Parameters](https:/go.microsoft.com/fwlink/?LinkID=113216)
